@@ -1,0 +1,73 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PFDinTextPro-Bold
+FamilyName:PF DinText Pro
+StyleName:Bold
+FullName:PFDinTextPro-Bold
+MenuName:PF DinText Pro
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:G:\korina_8\PROJECTS_2018\WebsiteLogistis\Website_logisths_FINAL -OneSlide Folder\Document fonts\PFDinTextPro-Bold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:158696
+FileModTime:1175754738
+WeightClass:700
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,PFDinTextPro-Bold
+NameArray:0,Win,1,PF DinText Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PFDinTextPro-Regular
+FamilyName:PF DinText Pro
+StyleName:Regular
+FullName:PFDinTextPro-Regular
+MenuName:PF DinText Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:G:\korina_8\PROJECTS_2018\WebsiteLogistis\Website_logisths_FINAL -OneSlide Folder\Document fonts\PFDinTextPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:149076
+FileModTime:1175755562
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,PFDinTextPro-Regular
+NameArray:0,Win,1,PF DinText Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:PFDinTextPro-Thin
+FamilyName:PF DinText Pro
+StyleName:Thin
+FullName:PFDinTextPro-Thin
+MenuName:PF DinText Pro Thin 
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:G:\korina_8\PROJECTS_2018\WebsiteLogistis\Website_logisths_FINAL -OneSlide Folder\Document fonts\PFDinTextPro-Thin.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:154892
+FileModTime:1175755520
+WeightClass:200
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,PFDinTextPro-Thin
+NameArray:0,Win,1,PF DinText Pro Thin 
+NameArray:0,Win,16,PF DinText Pro
+%EndFont
+
