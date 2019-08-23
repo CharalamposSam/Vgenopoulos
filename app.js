@@ -49,28 +49,84 @@ let i
 const btn1 = document.querySelectorAll( '.btn1' ),
       btn2 = document.querySelectorAll( '.btn2' ),
       btn3 = document.querySelectorAll( '.btn3' ),
-      btn4 = document.querySelectorAll( '.btn4' )
+      btn4 = document.querySelectorAll( '.btn4' ),
+      btn5 = document.querySelectorAll( '.btn5' )
         
 for ( i = 0; i < btn1.length; i++ ) {
     btn1[i].addEventListener( 'click', () => {
-        smoothScroll( '#oHorosMas', 800 )
+        smoothScroll( '#poioiEimaste', 800 )
     } )
 }
 
 for ( i = 0; i < btn1.length; i++ ) {
     btn2[i].addEventListener( 'click', () => {
-        smoothScroll( '#ipiresies', 800 )
+        smoothScroll( '#oHorosMas', 800 )
     } )
 }
 
 for ( i = 0; i < btn1.length; i++ ) {
     btn3[i].addEventListener( 'click', () => {
-        smoothScroll( '#pelates', 800 )
+        smoothScroll( '#ipiresies', 800 )
     } )
 }
 
 for ( i = 0; i < btn1.length; i++ ) {
     btn4[i].addEventListener( 'click', () => {
+        smoothScroll( '#pelates', 800 )
+    } )
+}
+
+for ( i = 0; i < btn1.length; i++ ) {
+    btn5[i].addEventListener( 'click', () => {
         smoothScroll( '#epikoinonia', 800 )
     } )
 }
+
+const logistikes = document.querySelector( '.section4 .images div:nth-child( 1 )' ),
+      forotehnikes = document.querySelector( '.section4 .images .middle' ),
+      symvouleftikes = document.querySelector( '.section4 .images div:nth-child( 3 )' ),
+      logistikesUL = document.querySelector( '.section5 .logistikesUL' ),
+      forotehnikesUL = document.querySelector( '.section5 .forotehnikesUL' ),
+      symvouleftikesUL = document.querySelector( '.section5 .symvouleftikesUL' ),
+      logistikesTitle = document.querySelector( '.section5 .container h3 .logistikesTitle' ),
+      forotehnikesTitle = document.querySelector( '.section5 .container h3 .forotehnikesTitle' ),
+      symvouleftikesTitle = document.querySelector( '.section5 .container h3 .symvouleftikesTitle' ),
+      logistikesImg = document.querySelector( '.section5 .container .logistikesImg' ),
+      forotehnikesImg = document.querySelector( '.section5 .container .forotehnikesImg' ),
+      symvouleftikesImg = document.querySelector( '.section5 .container .symvouleftikesImg' )
+
+    logistikes.addEventListener( 'click', ( ) => {
+        logistikesUL.style.opacity = `1`
+        forotehnikesUL.style.opacity = `0`
+        symvouleftikesUL.style.opacity = `0`
+        logistikesTitle.style.opacity = `1`
+        forotehnikesTitle.style.opacity = `0`
+        symvouleftikesTitle.style.opacity = `0`
+        logistikesImg.style.opacity = `1`
+        forotehnikesImg.style.opacity = `0`
+        symvouleftikesImg.style.opacity = `0`
+    } )
+      
+    forotehnikes.addEventListener( 'click', ( ) => {
+        logistikesUL.style.opacity = `0`
+        forotehnikesUL.style.opacity = `1`
+        symvouleftikesUL.style.opacity = `0`
+        logistikesTitle.style.opacity = `0`
+        forotehnikesTitle.style.opacity = `1`
+        symvouleftikesTitle.style.opacity = `0`
+        logistikesImg.style.opacity = `0`
+        forotehnikesImg.style.opacity = `1`
+        symvouleftikesImg.style.opacity = `0`
+    } )
+
+    symvouleftikes.addEventListener( 'click', ( ) => {
+        logistikesUL.style.opacity = `0`
+        forotehnikesUL.style.opacity = `0`
+        symvouleftikesUL.style.opacity = `1`
+        logistikesTitle.style.opacity = `0`
+        forotehnikesTitle.style.opacity = `0`
+        symvouleftikesTitle.style.opacity = `1`
+        logistikesImg.style.opacity = `0`
+        forotehnikesImg.style.opacity = `0`
+        symvouleftikesImg.style.opacity = `1`
+    } )
