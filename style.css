@@ -178,7 +178,7 @@ header nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 .section2 div {
@@ -214,7 +214,7 @@ header nav a {
     -ms-grid-rows: auto auto;
     -ms-grid-columns: auto;
         grid-template: auto auto / auto;
-    padding: 5% 10%;
+    padding: 0 10%;
   }
   .section2 div h1 {
     margin: 0;
@@ -227,7 +227,7 @@ header nav a {
     content: ' ';
   }
   .section2 div p {
-    margin: 15px 0;
+    margin: 15px 0 0;
   }
 }
 
@@ -239,7 +239,7 @@ header nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 .section3 .container {
@@ -266,7 +266,6 @@ header nav a {
 }
 
 .section3 .container .images div {
-  background-color: green;
   overflow: hidden;
   width: 100%;
 }
@@ -276,7 +275,6 @@ header nav a {
 }
 
 .section3 .container .images div:nth-child(1) {
-  background-color: green;
   max-width: 300px;
 }
 
@@ -285,7 +283,6 @@ header nav a {
 }
 
 .section3 .container .images div:nth-child(2) {
-  background-color: #396039;
   max-width: 200px;
   margin-left: -80px;
 }
@@ -295,7 +292,6 @@ header nav a {
 }
 
 .section3 .container .images div:nth-child(3) {
-  background-color: #406840;
   max-width: 200px;
 }
 
@@ -330,6 +326,9 @@ header nav a {
 }
 
 @media only screen and (max-width: 1100px) {
+  .section3 {
+    padding: 50px 0 80px 0;
+  }
   .section3 .container {
     -ms-grid-rows: auto auto;
     -ms-grid-columns: auto;
@@ -341,6 +340,9 @@ header nav a {
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
     margin-right: -190px;
+  }
+  .section3 .container .images div:nth-child(1) img, .section3 .container .images div:nth-child(2) img, .section3 .container .images div:nth-child(3) img {
+    margin-bottom: 15px;
   }
   .section3 .container .description {
     -ms-grid-row: 1;
@@ -403,7 +405,7 @@ header nav a {
 .section4 {
   width: 100%;
   background: #f1f1f2;
-  padding: 30px 0;
+  padding: 80px 0;
 }
 
 .section4 .container {
@@ -424,10 +426,11 @@ header nav a {
   font-weight: 100;
   color: black;
   font-size: 35px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   width: 100%;
   text-align: center;
   padding: 0 50px;
+  margin-top: 0;
 }
 
 .section4 .container h2 span {
@@ -460,6 +463,7 @@ header nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .section4 .container .images div img {
@@ -502,13 +506,30 @@ header nav a {
 
 .section5 .container {
   padding: 0 10%;
+  position: relative;
 }
 
 .section5 .container img {
   width: 100%;
   max-width: 50px;
-  margin: 0 0 15px 12%;
+  margin: 0 0 15px 100px;
   display: block;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.section5 .container .forotehnikesImg {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  opacity: 0;
+}
+
+.section5 .container .symvouleftikesImg {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  opacity: 0;
 }
 
 .section5 .container h3 {
@@ -516,15 +537,76 @@ header nav a {
   color: black;
   font-weight: 100;
   font-size: 25px;
+  position: relative;
 }
 
-.section5 .container h3 span {
+.section5 .container h3 div {
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.section5 .container h3 div span {
   color: #5c585d;
 }
 
-.section5 .container ul li {
+.section5 .container h3 .forotehnikesTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.section5 .container h3 .symvouleftikesTitle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 350px) {
+  .section5 .container h3 {
+    font-size: 20px;
+  }
+}
+
+.section5 .container .line {
+  width: 70px;
+  height: 6px;
+  border-radius: 15px;
+  background: #5d575c;
+  margin: 12px 0;
+}
+
+.section5 .container .ulContainer {
+  position: relative;
+}
+
+.section5 .container .ulContainer ul {
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.section5 .container .ulContainer ul li {
   margin: 10px 0;
   font-size: 18px;
+}
+
+.section5 .container .ulContainer .logistikesUL {
+  opacity: 1;
+}
+
+.section5 .container .ulContainer .forotehnikesUL {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  opacity: 0;
+}
+
+.section5 .container .ulContainer .symvouleftikesUL {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  opacity: 0;
 }
 
 @media only screen and (max-width: 550px) {
@@ -535,7 +617,7 @@ header nav a {
 
 .section6 {
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 80px 0;
 }
 
 .section6 .container {
