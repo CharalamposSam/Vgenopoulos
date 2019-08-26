@@ -93,7 +93,10 @@ const logistikes = document.querySelector( '.section4 .images div:nth-child( 1 )
       symvouleftikesTitle = document.querySelector( '.section5 .container h3 .symvouleftikesTitle' ),
       logistikesImg = document.querySelector( '.section5 .container .logistikesImg' ),
       forotehnikesImg = document.querySelector( '.section5 .container .forotehnikesImg' ),
-      symvouleftikesImg = document.querySelector( '.section5 .container .symvouleftikesImg' )
+      symvouleftikesImg = document.querySelector( '.section5 .container .symvouleftikesImg' ),
+      section5 = document.querySelector( '.section5' )
+
+      console.log( symvouleftikesUL.clientHeight )
 
     logistikes.addEventListener( 'click', ( ) => {
         logistikesUL.style.opacity = `1`
@@ -105,6 +108,10 @@ const logistikes = document.querySelector( '.section4 .images div:nth-child( 1 )
         logistikesImg.style.opacity = `1`
         forotehnikesImg.style.opacity = `0`
         symvouleftikesImg.style.opacity = `0`
+
+        section5.style.height = `${logistikesUL.clientHeight + 200}px`
+        section5.style.opacity = `1`
+
     } )
       
     forotehnikes.addEventListener( 'click', ( ) => {
@@ -117,6 +124,9 @@ const logistikes = document.querySelector( '.section4 .images div:nth-child( 1 )
         logistikesImg.style.opacity = `0`
         forotehnikesImg.style.opacity = `1`
         symvouleftikesImg.style.opacity = `0`
+
+        section5.style.height = `${forotehnikesUL.clientHeight + 200}px`
+        section5.style.opacity = `1`
     } )
 
     symvouleftikes.addEventListener( 'click', ( ) => {
@@ -129,4 +139,10 @@ const logistikes = document.querySelector( '.section4 .images div:nth-child( 1 )
         logistikesImg.style.opacity = `0`
         forotehnikesImg.style.opacity = `0`
         symvouleftikesImg.style.opacity = `1`
+
+        section5.style.height = `${symvouleftikesUL.clientHeight + 200}px`
+        section5.style.opacity = `1`
     } )
+
+   
+
