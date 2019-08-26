@@ -563,7 +563,7 @@ header nav a {
   opacity: 0;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .section5 .container h3 {
     font-size: 20px;
   }
