@@ -178,22 +178,22 @@ header nav a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 80px 0;
+  padding: 55px 0 80px;
 }
 
 .section2 div {
   max-width: 1000px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 300px 600px;
-      grid-template-columns: 300px 600px;
+  -ms-grid-columns: 200px 600px;
+      grid-template-columns: 200px 600px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .section2 div h1 {
-  margin: 10px 0 0 0;
+  margin: 35px 0 0 0;
   font-size: 60px;
   font-weight: 100;
   color: black;
